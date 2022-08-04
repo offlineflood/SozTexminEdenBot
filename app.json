@@ -1,22 +1,38 @@
-
 {
-  "name": "WordLookBot",
-  "description": "söz oynu",
-  "keywords": [
-    "telegram",
-    "best",
-    "group",
-    "manager",
-    "3"
-  ],
-  "repository": "https://github.com/offlineflood/SozTexminEdenBot",
-  
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "10"
-      }
+    "name": "Bilgi Bot",
+    "description": "Telegram kelime bilgi oyun",
+    "keywords": [
+        "telegram",
+        "bilgi",
+        "kelime",
+        "bot"
+    ],
+    "repository": "https://github.com/Tuncay456/Se?organization=Tuncay456&organization=Tuncay456",
+    "website": "https://t.me/+0kf_3zSzsCszZWJk",
+    "success_url": "https://t.me/+0kf_3zSzsCszZWJk",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "TOKEN": {
+            "description": "Get this from @BotFather"
+        },
+        "USERNAME": {
+            "description": "Get this from Owner id"
+        }
+    },
+    "buildpacks": [
+        { 
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-  ]
 }
