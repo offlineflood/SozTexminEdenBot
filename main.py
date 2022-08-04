@@ -41,7 +41,7 @@ def setup_logger():
 
 
 def help(update, context):
-    update.message.reply_text(︎︎'𝑵ə𝒓𝒈𝒊𝒛♡︎ Söz oyun botunun əmirləri⤵️\n\n📎 /start - Şəxsidə Salam Msj,Qrup daxilində oyunu tətikləyir.\n📎 /game - Oyunda aparıcı olmaq istəyirsinizsə yazın.\n📎 /rating - Qrup üzrə reytinqi görsədir.\n📎 /start - Botu başlat.', reply_to_message_id=True)
+    update.message.reply_text(︎︎'Nərgiz Söz oyun botunun əmirləri⤵️\n\n📎 /start - Şəxsidə Salam Msj,Qrup daxilində oyunu tətikləyir.\n📎 /game - Oyunda aparıcı olmaq istəyirsinizsə yazın.\n📎 /rating - Qrup üzrə reytinqi görsədir.\n📎 /start - Botu başlat.', reply_to_message_id=True)
 
 
 def button(update, context):
@@ -75,7 +75,7 @@ def command_start(update, context: CallbackContext):
 
         keyboard = [[addme],[sohbet],[oyun],[oksi]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        update.message.reply_text('Salam. Mənim Adım ︎︎𝑵ə𝒓𝒈𝒊𝒛♡︎.\nQruplarda Əyləncəli vaxd keçirmək üçün yaradıldım.\n\nℹ️ Qrup Əlavə edərək /game əmrinə toxunun bu sizi aparıcı edəcəkdir.\nSizə gösdəriləm sözü doslarınız izah edməyə başlayın.\nSözü tapan şəxs qalib eylan olunacaq.\n\n📎Ətraflı məlumat almaq üçün /help əmrinə toxunun.', reply_to_message_id=True, reply_markup=reply_markup)
+        update.message.reply_text('Salam. Mənim Adım ︎︎Nərgiz.\nQruplarda Əyləncəli vaxd keçirmək üçün yaradıldım.\n\nℹ️ Qrup Əlavə edərək /game əmrinə toxunun bu sizi aparıcı edəcəkdir.\nSizə gösdəriləm sözü doslarınız izah edməyə başlayın.\nSözü tapan şəxs qalib eylan olunacaq.\n\n📎Ətraflı məlumat almaq üçün /help əmrinə toxunun.', reply_to_message_id=True, reply_markup=reply_markup)
     else:
         chat_id = update.message.chat.id
         user_id = update.message.from_user.id
