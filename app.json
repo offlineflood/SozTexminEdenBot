@@ -1,0 +1,22 @@
+
+{
+  "name": "WordLookBot",
+  "description": "söz oynu",
+  "keywords": [
+    "telegram",
+    "best",
+    "group",
+    "manager",
+    "3"
+  ],
+  "repository": "https://github.com/KarabakhTag/ElxanSozOyunuBot",
+  
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "10"
+      }
+    }
+  ]
+}
