@@ -1,4 +1,4 @@
-#TheElxan
+#Th
 
 
 
@@ -82,10 +82,10 @@ def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
         addme = InlineKeyboardButton(text="➕ Məni Qrupa əlavə ed ➕", url="https://t.me/KMSozOyunBot?startgroup=a")
-        sohbet = [[InlineKeyboardButton(text="Kanal 📺 ", url="https://t.me/kohne_mekan_kanal")]] 
-        oyun += [[InlineKeyboardButton(text="Qrup 📣", url="https://t.me/kohne_mekan")]] 
-        oksi = [[InlineKeyboardButton(text="Sahib 👨‍💻", url="https://t.me/Leytenant_85")]] 
-        oksi += [[InlineKeyboardButton(text="K.M Bots 🛠️", url="https://t.me/KMBots")]] 
+        sohbet = InlineKeyboardButton(text="Kanal 📺 ", url="https://t.me/kohne_mekan_kanal")
+        oyun = InlineKeyboardButton(text="Qrup 📣", url="https://t.me/kohne_mekan")
+        oksi = InlineKeyboardButton(text="Sahib 👨‍💻", url="https://t.me/Leytenant_85")
+        oksi = InlineKeyboardButton(text="K.M Bots 🛠️", url="https://t.me/KMBots") 
 
         keyboard = [[addme],[sohbet],[oyun],[oksi]]
         reply_markup = InlineKeyboardMarkup(keyboard)
