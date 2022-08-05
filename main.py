@@ -40,8 +40,22 @@ def setup_logger():
     logger.addHandler(stream_handler)
 
 
+    
+    
 def help(update, context):
-    update.message.reply_text(︎︎'︎ Nərgiz Söz oyun botunun əmirləri. \n\n📎 /start - Şəxsidə Salam Msj Qrup daxilində oyunu tətikləyir.\n📎 /game - Oyunda aparıcı olmaq istəyirsinizsə yazın.\n📎 /rating - Qrup üzrə reytinqi görsədir.\n📎 /start - Botu başlat.', reply_to_message_id=True)
+    update.message.reply_text('Nərgiz Söz oyun botunun əmirləri.:\n\n' +
+                              '📎 /start - Şəxsidə Salam Msj Qrup daxilində oyunu tətikləyir.\n' +
+                              '📎 /game - Oyunda aparıcı olmaq istəyirsinizsə yazın.\n' +
+                              '📎 /rating - Qrup üzrə reytinqi görsədir.', reply_to_message_id=True)
+    
+    
+    
+    
+    
+    
+    
+#def help(update, context):
+ #   update.message.reply_text(︎︎'︎ Nərgiz Söz oyun botunun əmirləri. \n\n📎 /start - Şəxsidə Salam Msj Qrup daxilində oyunu tətikləyir.\n📎 /game - Oyunda aparıcı olmaq istəyirsinizsə yazın.\n📎 /rating - Qrup üzrə reytinqi görsədir.\n📎 /start - Botu başlat.', reply_to_message_id=True)
 
 
 def button(update, context):
