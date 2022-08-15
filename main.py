@@ -82,12 +82,12 @@ def command_start(update, context: CallbackContext):
     if update.effective_chat.type == "private":
         
         addme = InlineKeyboardButton(text="➕ Məni Qrupa əlavə ed ➕", url="https://t.me/UstaSozOyunbot?startgroup=a")
-     #   sohbet = InlineKeyboardButton(text="Kanal 📺 ", url="https://t.me/kohne_mekan_kanal")
-       # oyun = InlineKeyboardButton(text="Qrup 📣", url="https://t.me/kohne_mekan")
-        oksi = InlineKeyboardButton(text="Sahib 👨‍💻", url="https://t.me/UstaNakhid")
-        oksi = InlineKeyboardButton(text="USTA Bots 🛠️", url="https://t.me/ustabots") 
+        sohbet = InlineKeyboardButton(text="Sahib 👨‍💻 ", url="https://t.me/UstaNakhid")
+        oyun = InlineKeyboardButton(text="USTA Bots 🛠️", url="https://t.me/ustabots")
+       # oksi = InlineKeyboardButton(text="Sahib 👨‍💻", url="https://t.me/UstaNakhid")
+      #  oksi = InlineKeyboardButton(text="USTA Bots 🛠️", url="https://t.me/ustabots") 
 
-        keyboard = [[addme],[sohbet],[oyun],[oksi]]
+        keyboard = [[addme]][[sohbet],[oyun]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         update.message.reply_text('Salam. Mənim Adım Usta Söz Oyun bot.\nQruplarda Əyləncəli vaxd keçirmək üçün yaradıldım.\n\nℹ️ Qrup Əlavə edərək /game əmrinə toxunun bu sizi aparıcı edəcəkdir.\nSizə gösdəriləm sözü doslarınız izah edməyə başlayın.\nSözü tapan şəxs qalib eylan olunacaq.\n\n📎Ətraflı məlumat almaq üçün /help əmrinə toxunun.', reply_to_message_id=True, reply_markup=reply_markup)
     else:
